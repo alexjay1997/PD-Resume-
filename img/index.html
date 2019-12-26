@@ -1,0 +1,236 @@
+<!-- <php -->
+    	<!-- session_start(); -->
+    	<!-- //start connection -->
+<!-- $conn=mysqli_connect("localhost","root","","resume"); -->
+
+<!-- if(!$conn) -->
+<!-- { -->
+<!-- die("Connection failed: " . mysqli_connect_error()); -->
+<!-- } -->
+<!-- // end connection -->
+ <!-- ?> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Pd Resume
+</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+<script>
+	function show(){
+	document.getElementById("form-wrapper").style.display="block";
+	documnet.html.style.overflow= "hidden";
+	}
+	
+		function hide(){
+	document.getElementById("form-wrapper").style.display="none";
+	}
+	</script>
+<style>
+*{
+margin:0;
+}
+.header{
+position:absolute;
+width:100%;
+height:auto;
+z-index:1;
+
+
+}
+h1{
+font-size:32px;
+color: #bf66d1;
+}
+.banner{
+position:relative;top:0;
+
+width:100%;
+height:768px;
+background-image:url("img/banner1.png");
+background-size:cover;
+background-repeat:no-repeat;
+}
+section{
+width:100%;
+height:auto;
+<!-- border:px solid blue; -->
+}
+
+.global-container{
+width:80%;
+height:auto;
+padding:40px;
+margin:auto auto;
+<!-- border:1px solid green; -->
+overflow:hidden;
+}
+.wrapper{
+position:relative;top:100px;
+height:auto;
+
+
+}
+.banner-left{
+float:left;
+width:34%;
+height:300px;
+
+color:#ffffff;
+<!-- border:1px solid green; -->
+
+
+}
+.wrapper{
+<!-- border:1px solid red; -->
+overflow:hidden;
+}
+.form-wrapper{
+z-index:1;
+position:fixed;top:0px;
+
+overflow:none;
+width:100%;
+background:rgba(0,0,0,0.8);
+height:100%;
+margin-top:;
+}
+.banner-left p{
+font-family:calibri,sans-serif;
+font-size:22px;
+
+
+}
+
+.banner-right{
+float:right;
+width:50%;
+height:500px;
+<!-- border:1px solid green; -->
+}
+.logo{
+float:left;}
+.nav-top{
+<!-- border:1px solid red; -->
+width:35%;
+padding:0px;
+float:right;
+
+}
+.nav-top ul{
+overflow:hidden;}
+.nav-top li{
+list-style:none;
+float:left;
+width:100px;
+line-height:40px;
+font-family:calibri;
+font-size:20px;
+color:#9a0aae;
+}
+#showform
+{
+background:#df06be;
+
+}
+#showform:hover
+{
+background:violet;
+}
+</style>
+
+</head>
+<body >
+	<div class="page-container" style="width:100%;border:px solid red;height:780px;">
+		<section class="header">
+			<div class="global-container">
+				<div class="logo">
+				<img src="img/logo.png"width="60">
+					<label style="font-family:Lobster;color:#ffffff;font-size:32px;font-weight:normal;">Pd Resume</label>
+				</div>
+				<nav class="nav-top">
+					<ul>
+						<li>
+						Home
+						</li>
+						<li>
+						About
+						</li>
+						<li>
+						Demo
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		
+			<section class="banner">
+			
+			
+				
+			
+				
+			<div class="wrapper">
+				<div class="global-container">
+					<div class="banner-left">
+					
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<br><br>
+							<button id="showform"onclick="show()"style="cursor:pointer;border:3px solid #ffffff;padding:12px;width:170px;color:white;border-radius:30px;font-size:20px;">Start</button>
+					</div>
+					<div class="banner-right">
+						<img src="img/img1.png"/>
+					</div>
+				</div>
+				
+				
+			
+			</div>
+			
+		
+			
+				<div class="form-wrapper" id="form-wrapper" style="display:none;">
+				
+				<div class="auth-form" id="auth" style="background:#ffffff;width:400px;height:auto;padding:40px;border:px solid blue;margin:150px auto;justify-content:center;display:flex;"><br>
+				<div>
+				<button onclick="hide()"style="border:none;background:#ed4968;;padding:8px;color:white;width:30px;float:right;margin-top:-25px;margin-right:-50px;"><b>X</b> </button><br>
+					<div>
+					<form method="Post" action="login_function.php">
+					
+					<h1>Login</h1><br>
+						<input type="text" name="username" placeholder="username" style="margin-bottom:5px;width:230px;padding:9px;border-radius:30px;border:2px solid violet;"/><br>
+						<input type="password" name="password" placeholder="password" style="margin-bottom:5px;width:230px;padding:8px;border-radius:30px;border:2px solid violet;"/></><br><br>
+						<center><input type="submit" name="login" value="Login" style="cursor:pointer;border:2px solid violet;font-size:15px;font-family:calibri;border-radius:30px;padding:8px;width:130px;text-align:center;color:white;background:#a142e2;"/>&nbsp;<a href="signup.php">No account yet? Signup here</a></center>
+					
+					</form>
+				</div>
+			</div>
+				
+		</section>
+		
+			<section class="body">
+			
+			<div class="global-container">
+			<center>
+			<h1 style="font-family:Lobster;">About<h1><br>
+			</center>	
+					<p style="font-family:calibri;font-size:20px;color:grey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p style="font-family:calibri;font-size:20px;color:grey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p style="font-family:calibri;font-size:20px;color:grey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<br><br>									
+			</div>
+		</section>
+		
+			<section class="footer">
+			
+		</section>
+	
+	</div>
+	
+
+</body>
+</html>
